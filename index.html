@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.pinimg.com/originals/6a/72/4b/6a724b9501764fd83a4abcd37b58144d.png">
     <title>Ticket Booking Portal</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
         <form action="">
                 <h1>Book Tickets</h1>
                 <hr>
-                <fieldset><strong>PLEASE ENTER VALID DETAILS</strong></fieldset>
+                <fieldset><strong>*PLEASE ENTER VALID DETAILS*</strong></fieldset>
                 <br>
             <fieldset>
                 <fieldset><strong>PERSONAL DETAILS</strong></fieldset>
@@ -73,9 +74,17 @@
                 <input type="datetime-local">
                 <hr>
                 Class:
-                <input type="text">
+                <select>
+                    <option value="first">First</option>
+                    <option value="second">Second</option>
+                    <option value="third">Third</option>
+                    <option value="chaircar">Chaircar</option>
+                </select>
                 Quota:
-                <input type="text">
+                <select name="quota">
+                    <option value="gen">GEN</option>
+                    <option value="tatkal">TATKAL</option>
+                </select>
             </fieldset>
             <br>
             <fieldset>
@@ -87,12 +96,19 @@
                     Age:
                     <input type="number">
                     Berth Preference:
-                    <input type="text" placeholder="LOWER/MIDDLE/UPPER">
+                    <select name="berth">
+                        <option value="no">No preference</option>
+                        <option value="lower">Lower</option>
+                        <option value="middle">Middle</option>
+                        <option value="upper">Upper</option>
+                    </select>
                     Meal:
-                    <input type="radio" name="meal" value="veg">
-                    <label for="veg">Veg</label>
-                    <input type="radio" name="meal" value="nonveg">
-                    <label for="nonveg">Non-Veg</label>
+                    <select name="meal">
+                        <option value="no">Not opting</option>
+                        <option value="veg">Veg</option>
+                        <option value="nonveg">Non-Veg</option>
+
+                    </select>
                     Specially Abled:
                     <input type="checkbox">
                     </li>
@@ -103,12 +119,19 @@
                         Age:
                         <input type="number">
                         Berth Preference:
-                        <input type="text" placeholder="LOWER/MIDDLE/UPPER">
+                        <select name="berth">
+                            <option value="no">No preference</option>
+                            <option value="lower">Lower</option>
+                            <option value="middle">Middle</option>
+                            <option value="upper">Upper</option>
+                        </select>
                         Meal:
-                        <input type="radio" name="meal" value="veg">
-                        <label for="veg">Veg</label>
-                        <input type="radio" name="meal" value="nonveg">
-                        <label for="nonveg">Non-Veg</label>
+                        <select name="meal">
+                            <option value="no">Not opting</option>
+                            <option value="veg">Veg</option>
+                            <option value="nonveg">Non-Veg</option>
+    
+                        </select>
                         Specially Abled:
                         <input type="checkbox">
                     </li>
@@ -119,36 +142,50 @@
                         Age:
                         <input type="number">
                         Berth Preference:
-                        <input type="text" placeholder="LOWER/MIDDLE/UPPER">
+                        <select name="berth">
+                            <option value="no">No preference</option>
+                            <option value="lower">Lower</option>
+                            <option value="middle">Middle</option>
+                            <option value="upper">Upper</option>
+                        </select>
                         Meal:
-                        <input type="radio" name="meal" value="veg">
-                        <label for="veg">Veg</label>
-                        <input type="radio" name="meal" value="nonveg">
-                        <label for="nonveg">Non-Veg</label>
+                        <select name="meal">
+                            <option value="no">Not opting</option>
+                            <option value="veg">Veg</option>
+                            <option value="nonveg">Non-Veg</option>
+    
+                        </select>
                         Specially Abled:
                         <input type="checkbox">
-                    </li>  
-                    <br> 
+                    </li>
+                    <br>
                     <li>
                         Name:
                         <input type="text">
                         Age:
                         <input type="number">
                         Berth Preference:
-                        <input type="text" placeholder="LOWER/MIDDLE/UPPER">
+                        <select name="berth">
+                            <option value="no">No preference</option>
+                            <option value="lower">Lower</option>
+                            <option value="middle">Middle</option>
+                            <option value="upper">Upper</option>
+                        </select>
                         Meal:
-                        <input type="radio" name="meal" value="veg">
-                        <label for="veg">Veg</label>
-                        <input type="radio" name="meal" value="nonveg">
-                        <label for="nonveg">Non-Veg</label>
+                        <select name="meal">
+                            <option value="no">Not opting</option>
+                            <option value="veg">Veg</option>
+                            <option value="nonveg">Non-Veg</option>
+    
+                        </select>
                         Specially Abled:
                         <input type="checkbox">
-                    </li> 
+                    </li>
                 </ol>
             </fieldset>
-            <br>
             <div>
                 <center>
+                    <p>I hereby declare that the above provided details are true to my knowledge and providing false information is considered as a punishable offence</p>
                     <button type="submit">SUBMIT</button>
                     <button type="reset">RESET</button>
                 </center>
